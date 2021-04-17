@@ -3,7 +3,7 @@ import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
 import {Route, Switch} from 'react-router-dom';
 import {categoriesRequestedSaga, logoutSaga, requestHabitsSaga, statisticsLoaded} from "../../redux/actions";
-import {HomePage, LoginPage, RegisterPage, StatisticsPage, WelcomePage} from '../../pages';
+import {AboutPage, HomePage, LoginPage, RegisterPage, StatisticsPage, WelcomePage} from '../../pages';
 import Header from "../header";
 import Footer from "../footer";
 import {Col, Container, Row} from 'react-bootstrap';
@@ -21,20 +21,23 @@ const App = (props) => {
         }
     }, []);
     return (
-        <Container role='main' className='main'>
-            <Row>
-                <Col>
+        <Container role='main' className='h-100'>
+            <Row className='h-100'>
+                <Col className='h-100 main'>
                     <Header isLoggedIn={isLoggedIn}
                             user={user}
                             logout={logout}
                     />
-                    <Switch>
-                        <Route exact path='/' component={HomePage}/>
-                        <Route path='/login' component={LoginPage}/>
-                        <Route path='/register' component={RegisterPage}/>
-                        <Route path='/statistics' component={StatisticsPage}/>
-                        <Route path='/welcome' component={WelcomePage}/>
-                    </Switch>
+                    <div className='article d-flex'>
+                        <Switch>
+                            <Route exact path='/' component={HomePage}/>
+                            <Route path='/login' component={LoginPage}/>
+                            <Route path='/register' component={RegisterPage}/>
+                            <Route path='/statistics' component={StatisticsPage}/>
+                            <Route path='/welcome' component={WelcomePage}/>
+                            <Route path='/about' component={AboutPage}/>
+                        </Switch>
+                    </div>
                     <Footer
                         isLoggedIn={isLoggedIn}
                         logout={logout}

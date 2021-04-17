@@ -1,3 +1,19 @@
-.statistics, .statisticsJumbotron {
+.statistics {
     background-color: darkslategray;
+}
+
+.statistics h5 {
+    color: #B2B7F6;
+}
+
+.supernova {
+    color: orange;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+
+    .colByDaysInRow {
+        margin-top: 8px;
+    }
 }

@@ -17,7 +17,7 @@
 }
 
 @media (max-width: 500px) {
-    .footer justify-content-end {
-        font-size: 0.9rem;
+    .footerRight {
+        display: none;
     }
 }

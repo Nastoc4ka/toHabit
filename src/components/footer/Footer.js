@@ -16,8 +16,9 @@ const Footer = ({isLoggedIn, logout}) => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end'>
+            <Link className='mr-2 footerRight' to='/about'>About</Link>
             {isLoggedIn && <Nav className='justify-content-end'>
-                <Link className='mr-2' to='/' onClick={logout}>Log Out</Link>
+                <Link className='mr-2 footerRight' to='/' onClick={logout}>Log Out</Link>
             </Nav>}
         </Navbar.Collapse>
     </Navbar>)

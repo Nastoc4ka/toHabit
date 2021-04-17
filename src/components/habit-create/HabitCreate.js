@@ -11,16 +11,15 @@ class HabitCreate extends Component {
 
     onSubmit = (e) => {
         e.preventDefault();
+        const {categories, createHabit} = this.props;
+        const {categoryId, name} = this.state;
         if (!this.state.name.trim()) return;
 
-        let category = '';
+        const category = categoryId ?
+            categories.find(category => category.id == categoryId) :
+            categories[0];
 
-        if (this.state.category) {
-            category = this.props.categories.find(category => category.id == this.state.category);
-        } else {
-            category = this.props.categories[0];
-        }
-        this.props.createHabit({...this.state, category});
+        createHabit({name, category});
     };
 
     handleChange = (e) => {
@@ -30,7 +29,7 @@ class HabitCreate extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            category: '',
+            categoryId: '',
             name: ''
         };
         this.habitInputFocus = React.createRef();
@@ -74,7 +73,7 @@ class HabitCreate extends Component {
                                         <Form.Label className='mt-2'>Choose Category:</Form.Label>
                                     </Col>
                                     <Col sm={12}>
-                                        <Form.Control as="select" name='category' value={this.state.category}
+                                        <Form.Control as="select" name='categoryId' value={this.state.categoryId}
                                                       onChange={this.handleChange}>
                                             {categories.map((category) => {
                                                 return <option key={`category${category.id}`}

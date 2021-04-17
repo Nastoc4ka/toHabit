@@ -13,12 +13,24 @@
     src: local('Train One'), url(../../fonts/Syne_Mono/SyneMono-Regular.ttf) format('truetype');
 }
 
+li {
+    list-style: none;
+}
+
 a {
     color: #A05F7E;
-    font-family: 'Syne Mono', monospace;
 }
 
 a:hover {
     text-decoration: none !important;
     color: darkslategrey;
+}
+
+.article {
+    flex: 1;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
 }

@@ -98,9 +98,8 @@ class RegisterPage extends Component {
                 <Row className="justify-content-center mt-3 mb-3">
                     <Card>
                         <Card.Body>
-                            <Form
-                                onSubmit={this.handleRegister}
-                                ref={(c) => {
+                            <Form onSubmit={this.handleRegister}
+                                  ref={(c) => {
                                     this.form = c;
                                 }}
                             >
@@ -145,9 +144,7 @@ class RegisterPage extends Component {
                                 </FormBT.Group>
                                 {message && (
                                     <FormBT.Group className='alertMessageRegister'>
-                                        <Alert
-                                            className={this.state.successful ? "alert alert-success" : "alert alert-danger"}
-                                            role="alert">
+                                        <Alert className="alert alert-danger" role="alert">
                                             {message}
                                         </Alert>
                                     </FormBT.Group>

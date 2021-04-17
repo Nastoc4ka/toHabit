@@ -11,7 +11,7 @@ const AddHabit = (props) => {
         <Button className='w-100 mt-3' variant="outline-success" onClick={() => showHabitCreate()}>
             ADD NEW HABIT
         </Button>
-        <Modal show={display} onHide={() => hideHabitCreate()}>
+        <Modal show={display} onHide={() => hideHabitCreate()} animation={false}>
             <Modal.Header closeButton>
                 <Modal.Body>
                     <HabitCreate/>

@@ -1,11 +1,12 @@
 .alertDone {
-    position: absolute;
-    display: inline-block;
+    position: fixed;
+    display: block;
     min-width: 150px;
     z-index: 5;
-    left: 120px;
-    top: 0;
-    border-radius: 75%;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
 }
 
 .alertD {

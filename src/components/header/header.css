@@ -1,38 +1,65 @@
 .toHabit {
     font-family: 'Syne Mono', monospace;
-    font-size: 25px;
+    font-size: 1.2rem;
     color: cadetblue;
 }
 
-.toHabit:hover, .statisticsLink:hover {
+.navbar-brand {
+    padding-top: 1px;
+}
+
+.toHabit:hover, .headerLinks:hover {
     text-decoration: none !important;
     color: #28a745;
 }
 
-.statisticsLink {
+.headerLinks {
     color: #A7906F;
-    font-size: 20px;
+    font-family: 'Syne Mono', monospace;
 }
 
 .header .justify-content-end {
     color: #5F7EA0;
 }
 
+.displayIcon {
+    display: none;
+}
+
+li {
+    display: inline-block;
+}
+
+.current li::after {
+    width: 100% !important;
+}
+
+.underline li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #000;
+    transition: width .4s;
+}
+
 @media (max-width: 500px) {
-    .header, .toHabit, .statisticsLink, nav.justify-content-end {
+    .toHabit, .userName, .rightHeader {
         font-size: 0.9rem;
     }
 
-    .statisticsWord {
+    .displayWord {
         display: none;
     }
 
-    .statisticsLink div {
-        font-size: 1.4rem;
+    .displayIcon {
+        display: inline;
     }
+}
 
-    .header .navbar-brand {
-        padding-bottom: 0;
+@media (max-width: 320px) {
+    .userName {
+        display: none;
     }
 }
 

@@ -70,7 +70,7 @@ class LoginPage extends Component {
         const {isLoggedIn, message, loading} = this.props;
 
         if (isLoggedIn) {
-            return <Redirect to="/"/>;
+            return <Redirect to="/"/>
         }
 
         return (

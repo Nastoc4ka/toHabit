@@ -6,7 +6,7 @@ import Spinner from '../spinner';
 import ErrorIndicator from '../error-indicator';
 import {habitEditShow, habitRemoveSaga, onDoneSaga, requestHabitsSaga} from '../../redux/actions';
 import './habitList.css';
-import {Container, ListGroup, Row} from "react-bootstrap";
+import {Alert, Container, ListGroup, Row} from "react-bootstrap";
 
 const HabitList = ({habits, showInput, alertMarkDoneId, selectedId, onDone, errorRemoveHabit, loadingHabit, loadingRemoveHabit, removeHabit}) => {
 
@@ -57,7 +57,8 @@ class HabitsContainer extends Component {
         const catList = habits.map(h => h.category.name);
 
         const categories = [...new Set(catList)].sort((a, b) => a - b);
-
+        if (habits.length <= 0) return <Alert variant='success' className='d-flex justify-content-center'>Create your
+            first habit!</Alert>
         return (<>
             {
                 categories.map(category => {

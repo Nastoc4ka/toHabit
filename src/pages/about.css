@@ -1,0 +1,26 @@
+.content {
+    font-weight: 600;
+    margin-left: 5px;
+    color: #4e555b;
+
+}
+
+.appFeaturelist li {
+    list-style: none;
+}
+
+.headAbout {
+    margin-left: 15px;
+}
+
+.screenShot img {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .appFeaturelist li {
+        font-size: 0.9rem;
+    }
+}

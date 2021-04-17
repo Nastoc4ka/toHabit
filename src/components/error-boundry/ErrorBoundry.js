@@ -15,7 +15,7 @@ export default class ErrorBoundry extends Component {
 
     render() {
         if (this.state.hasError) {
-            return <ErrorIndicator message={'something gone wrong'}/>
+            return <ErrorIndicator message={'something gone wrong... contact vendor'}/>
         }
         return this.props.children
     }

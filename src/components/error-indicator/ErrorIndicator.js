@@ -3,11 +3,12 @@ import './error.css';
 import {Alert} from "react-bootstrap";
 
 const ErrorIndicator = ({error}) => {
-    console.log(JSON.stringify(error));
+
+    const msg = error ? error.msg : 'unknown mistake';
 
     return (
-        <div className='error'>
-            <Alert variant='danger'>{error.msg}</Alert>
+        <div>
+            <Alert variant='danger' data-testid="error">{msg}</Alert>
         </div>
     )
 };

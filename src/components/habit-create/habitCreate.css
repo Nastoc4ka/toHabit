@@ -2,27 +2,6 @@
     padding-right: 0px;
 }
 
-.spiritual {
-    color: greenyellow;
+.btn-outline-success.focus, .btn-outline-success:focus {
+    box-shadow: unset;
 }
-
-.sport {
-    color: coral;
-}
-
-.food {
-    color: cornflowerblue;
-}
-
-.study {
-    color: orchid;
-}
-
-.emotional {
-    color: yellow;
-}
-
-.another {
-    color: cadetblue;
-}
-

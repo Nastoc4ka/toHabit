@@ -1,7 +1,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+
 const app = express();
+
 
 app.use(cors());
 
@@ -21,7 +23,7 @@ require("./app/routes/auth.routes")(app);
 require("./app/routes/user.routes")(app);
 
 // set port, listen for requests
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`);
 });

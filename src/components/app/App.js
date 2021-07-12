@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
-import {Route, Switch} from 'react-router-dom';
+import {Redirect, Route, Switch} from 'react-router-dom';
 import {categoriesRequestedSaga, logoutSaga, requestHabitsSaga, statisticsLoaded} from "../../redux/actions";
 import {AboutPage, HomePage, LoginPage, RegisterPage, StatisticsPage, WelcomePage} from '../../pages';
 import Header from "../header";
@@ -36,6 +36,7 @@ const App = (props) => {
                             <Route path='/statistics' component={StatisticsPage}/>
                             <Route path='/welcome' component={WelcomePage}/>
                             <Route path='/about' component={AboutPage}/>
+                            <Route render={() => <Redirect to='/about'/>}/>
                         </Switch>
                     </div>
                     <Footer

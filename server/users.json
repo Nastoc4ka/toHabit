@@ -40,7 +40,12 @@
           1618685539234,
           1618737885684,
           1618737887217,
-          1618840934916
+          1618840934916,
+          1618853881513,
+          1618853968913,
+          1618940368913,
+          1619169484232,
+          1622817607706
         ]
       },
       {
@@ -68,7 +73,11 @@
           1618681874679,
           1618681880818,
           1618737884423,
-          1618840936062
+          1618840936062,
+          1618947063086,
+          1622732895337,
+          1622817495337,
+          1622817606106
         ]
       },
       {
@@ -159,7 +168,18 @@
           1618840940394,
           1618840940583,
           1618840940780,
-          1618840940989
+          1618840940989,
+          1618940372509,
+          1619171822516,
+          1619171823944,
+          1619171825131,
+          1619171826246,
+          1619171827624,
+          1618853881513,
+          1618853881514,
+          1618853881515,
+          1619171830061,
+          1622817602511
         ]
       },
       {
@@ -172,7 +192,8 @@
           1618515763637,
           1618606165267,
           1618606172471,
-          1618840936966
+          1618840936966,
+          1618947066072
         ],
         "category": {
           "id": 1002,
@@ -243,8 +264,244 @@
           1618685509526,
           1618742105933,
           1618742118953,
-          1618840942939
+          1618840942939,
+          1618940370577,
+          1619171837899,
+          1622817603619
         ]
+      },
+      {
+        "activity": [
+          1618947044253,
+          1618947060572
+        ],
+        "name": "react course",
+        "category": {
+          "id": 1001,
+          "name": "Study",
+          "color": {
+            "value": "purple",
+            "label": "Purple",
+            "color": "#A2ACEB",
+            "bgColor": "#B2B7F6"
+          }
+        },
+        "id": 10005
+      },
+      {
+        "activity": [
+          1618947094299,
+          1618947095689,
+          1619171820252,
+          1622817604579
+        ],
+        "name": "smile",
+        "category": {
+          "color": {
+            "value": "orange",
+            "label": "Orange",
+            "color": "#FF8B00",
+            "bgColor": "#FCC201"
+          },
+          "name": "Emotional",
+          "id": 1004
+        },
+        "id": 10006
+      }
+    ],
+    "categories": [
+      {
+        "id": 1000,
+        "name": "Spiritual",
+        "color": {
+          "value": "pink",
+          "label": "Pink",
+          "color": "#F6B09D",
+          "bgColor": "#EDC4BC"
+        }
+      },
+      {
+        "id": 1001,
+        "name": "Study",
+        "color": {
+          "value": "purple",
+          "label": "Purple",
+          "color": "#A2ACEB",
+          "bgColor": "#B2B7F6"
+        }
+      },
+      {
+        "id": 1002,
+        "name": "Sport",
+        "color": {
+          "value": "ocean",
+          "label": "Ocean",
+          "color": "#B4D5F9",
+          "bgColor": "#B2F6F0"
+        }
+      },
+      {
+        "id": 1003,
+        "name": "Health",
+        "color": {
+          "value": "menthol",
+          "label": "Menthol",
+          "color": "#B4F6A4",
+          "bgColor": "#C0EBC4"
+        }
+      },
+      {
+        "color": {
+          "value": "orange",
+          "label": "Orange",
+          "color": "#FF8B00",
+          "bgColor": "#FCC201"
+        },
+        "name": "Emotional",
+        "id": 1004
+      }
+    ]
+  },
+  {
+    "id": 100002,
+    "username": "Bob",
+    "email": "nasto4ka@gmail.com",
+    "password": "$2a$08$HcFySFP8W3Rpg99DSXjaRevIQzrRYAw4n3Tp5nv7ljV/IoGgUERXu",
+    "habits": [
+      {
+        "activity": [
+          1622816261090
+        ],
+        "name": "morning run 30min",
+        "category": {
+          "id": 1002,
+          "name": "Sport",
+          "color": {
+            "value": "ocean",
+            "label": "Ocean",
+            "color": "#B4D5F9",
+            "bgColor": "#B2F6F0"
+          }
+        },
+        "id": 10000
+      },
+      {
+        "activity": [
+          1622816256950,
+          1622816265854
+        ],
+        "name": "learn redux",
+        "category": {
+          "id": 1001,
+          "name": "Study",
+          "color": {
+            "value": "purple",
+            "label": "Purple",
+            "color": "#A2ACEB",
+            "bgColor": "#B2B7F6"
+          }
+        },
+        "id": 10001
+      },
+      {
+        "category": {
+          "id": 1000,
+          "name": "Spiritual",
+          "color": {
+            "value": "pink",
+            "label": "Pink",
+            "color": "#F6B09D",
+            "bgColor": "#EDC4BC"
+          }
+        },
+        "name": "smyle",
+        "id": 10002,
+        "activity": [
+          1622816293215,
+          1622816370768
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": 1000,
+        "name": "Spiritual",
+        "color": {
+          "value": "pink",
+          "label": "Pink",
+          "color": "#F6B09D",
+          "bgColor": "#EDC4BC"
+        }
+      },
+      {
+        "id": 1001,
+        "name": "Study",
+        "color": {
+          "value": "purple",
+          "label": "Purple",
+          "color": "#A2ACEB",
+          "bgColor": "#B2B7F6"
+        }
+      },
+      {
+        "id": 1002,
+        "name": "Sport",
+        "color": {
+          "value": "ocean",
+          "label": "Ocean",
+          "color": "#B4D5F9",
+          "bgColor": "#B2F6F0"
+        }
+      },
+      {
+        "id": 1003,
+        "name": "Health",
+        "color": {
+          "value": "menthol",
+          "label": "Menthol",
+          "color": "#B4F6A4",
+          "bgColor": "#C0EBC4"
+        }
+      },
+      {
+        "color": {
+          "value": "green",
+          "label": "Green",
+          "color": "#36B37E",
+          "bgColor": "#ABCB9A"
+        },
+        "name": "Emotional",
+        "id": 1004
+      }
+    ]
+  },
+  {
+    "id": 100003,
+    "username": "Tom",
+    "email": "qq@dd.dd",
+    "password": "$2a$08$1Xl72ayeEoYt2c5hP18wlOom2.khO/jvxMY.BpekesppfdwfwGgRW",
+    "habits": [
+      {
+        "activity": [
+          1626078870309,
+          1626078876569,
+          1626078876823,
+          1626078877523,
+          1626078878147,
+          1626078879137
+        ],
+        "name": "drink water",
+        "category": {
+          "id": 1002,
+          "name": "Sport",
+          "color": {
+            "value": "ocean",
+            "label": "Ocean",
+            "color": "#B4D5F9",
+            "bgColor": "#B2F6F0"
+          }
+        },
+        "id": 10000
       }
     ],
     "categories": [

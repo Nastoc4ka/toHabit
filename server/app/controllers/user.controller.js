@@ -14,7 +14,7 @@ exports.userHabits = (req, res) => {
 exports.userAddHabit = (req, res) => {
     const existedUsers = getUserData();
     const userIdx = existedUsers.findIndex(u => u.id === req.userId);
-
+    console.log(req.body.name);
     const id = existedUsers[userIdx].habits.length ? Math.max(...existedUsers[userIdx].habits.map(h => h.id)) + 1 : 10000;
     const habit = {activity: [], ...req.body, id};
 

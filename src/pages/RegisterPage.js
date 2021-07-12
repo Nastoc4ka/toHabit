@@ -4,7 +4,6 @@ import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import {isEmail} from "validator";
-
 import {connect} from "react-redux";
 import {clearMessage, registerInit, registerSaga} from "../redux/actions/index";
 import {Alert, Button, Card, Container, Form as FormBT, Row} from "react-bootstrap";

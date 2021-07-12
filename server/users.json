@@ -289,5 +289,103 @@
         }
       }
     ]
+  },
+  {
+    "id": 100002,
+    "username": "Tom",
+    "email": "bob@gmafil.com",
+    "password": "$2a$08$MpTDPk4Z4vMV1W42M/ZR7uoIXb00CXEkyGGGHc2zHvS7Zenj/56pq",
+    "habits": [
+      {
+        "activity": [
+          1626082090011
+        ],
+        "name": "drink water",
+        "category": {
+          "id": 1003,
+          "name": "Health",
+          "color": {
+            "value": "menthol",
+            "label": "Menthol",
+            "color": "#B4F6A4",
+            "bgColor": "#C0EBC4"
+          }
+        },
+        "id": 10000
+      },
+      {
+        "activity": [
+          1626082104118,
+          1626082104523,
+          1626082104698,
+          1626082104866,
+          1626082105041
+        ],
+        "name": "dd",
+        "category": {
+          "color": {
+            "value": "yellow",
+            "label": "Yellow",
+            "color": "#FFC400",
+            "bgColor": "#FFFCC3"
+          },
+          "name": "ddd",
+          "id": 1004
+        },
+        "id": 10001
+      }
+    ],
+    "categories": [
+      {
+        "id": 1000,
+        "name": "Spiritual",
+        "color": {
+          "value": "pink",
+          "label": "Pink",
+          "color": "#F6B09D",
+          "bgColor": "#EDC4BC"
+        }
+      },
+      {
+        "id": 1001,
+        "name": "Study",
+        "color": {
+          "value": "purple",
+          "label": "Purple",
+          "color": "#A2ACEB",
+          "bgColor": "#B2B7F6"
+        }
+      },
+      {
+        "id": 1002,
+        "name": "Sport",
+        "color": {
+          "value": "ocean",
+          "label": "Ocean",
+          "color": "#B4D5F9",
+          "bgColor": "#B2F6F0"
+        }
+      },
+      {
+        "id": 1003,
+        "name": "Health",
+        "color": {
+          "value": "menthol",
+          "label": "Menthol",
+          "color": "#B4F6A4",
+          "bgColor": "#C0EBC4"
+        }
+      },
+      {
+        "color": {
+          "value": "yellow",
+          "label": "Yellow",
+          "color": "#FFC400",
+          "bgColor": "#FFFCC3"
+        },
+        "name": "ddd",
+        "id": 1004
+      }
+    ]
   }
 ]
